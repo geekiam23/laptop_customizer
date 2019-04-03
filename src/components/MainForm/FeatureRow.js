@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureList from "./FeatureList";
 
-class Feature extends React.Component {
+class FeatureRow extends React.Component {
   render() {
     return (
       <div className="feature" key={this.props.name}>
@@ -17,4 +17,4 @@ class Feature extends React.Component {
   }
 }
 
-export default Feature;
+export default FeatureRow;

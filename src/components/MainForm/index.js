@@ -1,10 +1,10 @@
 import React from "react";
-import Feature from "./Feature";
+import FeatureRow from "./FeatureRow";
 
 class MainForm extends React.Component {
   render() {
-    const features = Object.keys(this.props.features).map(key => (
-      <Feature
+    const featureRow = Object.keys(this.props.features).map(key => (
+      <FeatureRow
         key={key}
         name={key}
         features={this.props.features[key]}
@@ -16,7 +16,7 @@ class MainForm extends React.Component {
     return (
       <section className="main__form">
         <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
-        {features}
+        {featureRow}
       </section>
     );
   }

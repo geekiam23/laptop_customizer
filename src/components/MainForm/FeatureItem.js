@@ -5,6 +5,7 @@ class FeatureItem extends React.Component {
     const selectedClass =
       this.props.name === this.props.selected.name ? "feature__selected" : "";
     const featureClass = "feature__option " + selectedClass;
+
     return (
       <li className="feature__item">
         <div
